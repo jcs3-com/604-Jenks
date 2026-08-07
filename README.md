@@ -1,18 +1,13 @@
-# 604 Jenks Boulevard – upgraded landing page
+# 604 Jenks Boulevard – Southern historic-home style version
 
-This version is more visual and much lighter on copy. It uses a cinematic framed hero image, minimal messaging, and a simple contact modal.
+This version leans more elegant and traditional, with lighter tones, refined serif typography, and a more stately presentation.
 
-## Files
-- `index.html` — main one-page landing page (self-contained CSS + JS)
-- `assets/604-jenks-hero.jpg` — hero image
+## What changed
+- More elegant / historic-home visual tone
+- Light cream and green palette
+- House image embedded directly into the HTML so it always loads
+- Minimal copy
+- Formspree still connected
 
-## Before launch
-1. Open `index.html`.
-2. Find `SITE_CONFIG` near the bottom.
-3. Replace `dustin@example.com` with Dustin's real email.
-4. Optional: add a Formspree endpoint if you want the form to submit directly.
-5. Push the folder to GitHub Pages and point `604jenks.homes` to it.
-
-## Notes
-- Public listing buttons currently link to search/property pages that can be refined later once the formal MLS/brokerage links are live.
-- Price, beds, baths, and square footage are intentionally omitted for now so the page stays clean and avoids displaying unverified details.
+## Deploy
+Replace the current `index.html` in your GitHub Pages repo with this one and republish.
