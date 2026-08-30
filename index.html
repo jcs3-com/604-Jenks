@@ -4,17 +4,20 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!-- === FILL THESE IN === Everything marked TODO needs real values before launch. -->
+<!-- REMOVE AT UNLOCK. While the site sits behind Cloudflare Access this is
+     belt-and-braces: Access already blocks crawlers, but if the gate is lifted
+     before the listing is in MichRIC, this keeps the page out of the index. -->
+<meta name="robots" content="noindex, nofollow">
 
-<title>604 Jenks Boulevard, Kalamazoo | For Sale</title>
-<meta name="description" content="A restored period home on Kalamazoo's west side. Showings by appointment.">
+<title>604 Jenks Boulevard, Kalamazoo</title>
+<meta name="description" content="A 1949 colonial in Westwood, Kalamazoo. Three bedrooms, brick paver drive, heated workshop. Showings by appointment.">
 <link rel="canonical" href="https://604jenks.homes/">
 
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://604jenks.homes/">
 <meta property="og:title" content="604 Jenks Boulevard, Kalamazoo">
-<meta property="og:description" content="A restored period home on Kalamazoo's west side. Showings by appointment.">
-<!-- Absolute URL, never a data URI. Facebook, LinkedIn, iMessage and Slack all refuse data URIs. -->
+<meta property="og:description" content="A 1949 colonial in Westwood. Showings by appointment.">
+<!-- Absolute URL, never a data URI. No social platform renders a data URI. -->
 <meta property="og:image" content="https://604jenks.homes/604-jenks-hero.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -36,11 +39,12 @@
 
 <!-- 1 . HERO -->
 <section class="hero">
-  <img class="hero__img" src="604-jenks-hero.jpg" alt="604 Jenks Boulevard seen from the street, with mature trees along the front walk." width="2400" height="1600" fetchpriority="high" decoding="async">
+  <img class="hero__img" src="604-jenks-hero.jpg" alt="604 Jenks Boulevard from the street: a two-story colonial with dark green shutters and a red front door, set back behind mature hardwoods, with a reclaimed brick paver drive leading to a detached garage." width="2400" height="1600" fetchpriority="high" decoding="async">
   <div class="hero__plate">
-    <p class="eyebrow">For sale &middot; Kalamazoo 49006</p>
+    <p class="eyebrow">Westwood &middot; Kalamazoo 49006</p>
     <h1 class="hero__title">604 Jenks<br>Boulevard</h1>
-    <p class="hero__price" data-todo>$000,000</p>
+    <!-- No price. Not published until the listing is entered in MichRIC.
+         That is the broker's call, not ours. -->
     <a class="btn btn--brass" href="#inquire">Request a showing</a>
   </div>
 </section>
@@ -50,24 +54,27 @@
   <div class="wrap wrap--split">
     <div class="prose">
       <p class="eyebrow">The house</p>
-      <h2>Built to last, kept that way.</h2>
-      <!-- TODO: replace with real narrative. Two or three short paragraphs.
-           Lead with what a buyer notices walking in, not a feature list. -->
-      <p>Placeholder narrative. Describe the entry, the light, the room that sells the house. Name the neighborhood and what is walkable from the front door.</p>
-      <p>Second paragraph: what has been updated and when, including roof, mechanicals, kitchen, bath. Buyers read this section for reassurance, so be specific with years.</p>
+      <h2>A 1949 colonial, and the drive that leads to it.</h2>
+      <!-- TODO: replace once the questionnaire comes back. The brick drive is
+           the lead, not a footnote - reclaimed street pavers with lettering
+           still legible in them. The 2009 listing led with it too. -->
+      <p>Placeholder. Open on the brick drive, then the front door, then the room that sells the house. Specifics only.</p>
+      <p>Second paragraph: what has been updated and when. Years, not adjectives. Anything undated stays out.</p>
     </div>
 
-    <!-- Signature element: the specification ledger. Ruled rows, old-style figures. -->
+    <!-- Signature element: the specification ledger. Ruled rows, old-style figures.
+         Values below are public record via Zillow, pending Dustin's confirmation.
+         Baths confirmed 2.5. Heating deliberately omitted - furnace is newer but
+         undated, and a vague claim is worse than no claim. -->
     <dl class="ledger" data-todo>
-      <div class="ledger__row"><dt>Bedrooms</dt><dd>0</dd></div>
-      <div class="ledger__row"><dt>Bathrooms</dt><dd>0</dd></div>
-      <div class="ledger__row"><dt>Finished area</dt><dd>0,000 sq ft</dd></div>
-      <div class="ledger__row"><dt>Lot</dt><dd>0.00 acres</dd></div>
-      <div class="ledger__row"><dt>Year built</dt><dd>0000</dd></div>
-      <div class="ledger__row"><dt>Garage</dt><dd>&mdash;</dd></div>
-      <div class="ledger__row"><dt>Heating</dt><dd>&mdash;</dd></div>
-      <div class="ledger__row"><dt>Annual taxes</dt><dd>&mdash;</dd></div>
-      <div class="ledger__row"><dt>Parcel</dt><dd>&mdash;</dd></div>
+      <div class="ledger__row"><dt>Bedrooms</dt><dd>3</dd></div>
+      <div class="ledger__row"><dt>Bathrooms</dt><dd>2.5</dd></div>
+      <div class="ledger__row"><dt>Finished area</dt><dd>1,412 sq ft</dd></div>
+      <div class="ledger__row"><dt>Lot</dt><dd>0.40 acres</dd></div>
+      <div class="ledger__row"><dt>Year built</dt><dd>1949</dd></div>
+      <div class="ledger__row"><dt>Garage</dt><dd>Detached, heated workshop</dd></div>
+      <div class="ledger__row"><dt>Annual taxes</dt><dd>$5,400</dd></div>
+      <div class="ledger__row"><dt>Parcel</dt><dd>0617135652</dd></div>
     </dl>
   </div>
 </section>
@@ -89,9 +96,11 @@
   <div class="wrap wrap--split">
     <div class="prose">
       <p class="eyebrow">Location</p>
-      <h2>Kalamazoo&rsquo;s west side.</h2>
-      <!-- TODO: real neighborhood copy. Schools, parks, commute, what is walkable. -->
-      <p>Placeholder. Two or three sentences on the neighborhood, what is within walking distance, the school district, and distance to downtown and Western Michigan University.</p>
+      <h2>Westwood.</h2>
+      <!-- TODO: neighborhood copy pending questionnaire. Confirm school
+           assignment with Jason before publishing it - boundaries move.
+           Kalamazoo Promise stays out until he signs off on the wording. -->
+      <p>Placeholder. What is walkable, the school assignment, and drive times to downtown and to Western Michigan University.</p>
     </div>
     <div class="map">
       <iframe title="Map showing 604 Jenks Boulevard, Kalamazoo, Michigan" src="https://maps.google.com/maps?q=604%20Jenks%20Blvd%2C%20Kalamazoo%2C%20MI%2049006&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -108,10 +117,10 @@
       <h2>Arrange a visit.</h2>
 
       <div class="agent__card" data-todo>
-        <p class="agent__name">TODO: Broker name</p>
-        <p class="agent__meta">TODO: Brokerage &middot; Michigan license #TODO</p>
+        <p class="agent__name">Jason Reicherts</p>
+        <p class="agent__meta">Evenboer-Walton Realtors &middot; Michigan license #TODO</p>
         <p class="agent__meta"><a href="tel:+10000000000">TODO: phone</a></p>
-        <p class="agent__note">TODO: showing procedure, whether ShowingTime, call, or text. State the real process so agents do not have to guess.</p>
+        <p class="agent__note">TODO: showing procedure. State the real process so buyer agents do not have to guess.</p>
       </div>
 
       <ul class="docs">
@@ -122,7 +131,8 @@
       <button class="btn btn--ghost" id="share" type="button">Share this listing</button>
     </div>
 
-    <form class="form" id="inquiry" action="https://formspree.io/f/TODO_FORM_ID" method="POST">
+    <!-- Same-origin. Handled by functions/api/inquiry.js on Cloudflare Pages. -->
+    <form class="form" id="inquiry" action="/api/inquiry" method="POST">
       <p class="eyebrow">Send an inquiry</p>
 
       <label for="name">Your name</label>
@@ -147,13 +157,18 @@
       <textarea id="message" name="message" rows="4"></textarea>
 
       <!-- Honeypot. Real people never fill this in; bots do. -->
-      <div class="hp" aria-hidden="true"><label for="company">Company</label><input id="company" name="_gotcha" type="text" tabindex="-1" autocomplete="off"></div>
+      <div class="hp" aria-hidden="true"><label for="company">Company</label><input id="company" name="company" type="text" tabindex="-1" autocomplete="off"></div>
 
-      <input type="hidden" name="_subject" id="subj" value="604 Jenks inquiry">
+      <input type="hidden" name="t0" id="t0" value="">
       <input type="hidden" name="source" id="src" value="">
 
+      <!-- TODO: paste the Turnstile site key, then uncomment.
+      <div class="cf-turnstile" data-sitekey="TODO_TURNSTILE_SITE_KEY"></div>
+      <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+      -->
+
       <button class="btn btn--brass" type="submit">Send inquiry</button>
-      <p class="form__note">Goes to the listing broker and the owner. Expect a reply within one business day.</p>
+      <p class="form__note" id="form-note">Goes to the listing broker and the owner. Expect a reply within one business day.</p>
     </form>
 
   </div>
@@ -162,7 +177,7 @@
 <footer class="foot">
   <div class="wrap">
     <p class="foot__eho"><span aria-hidden="true">&#8962;</span> Equal Housing Opportunity</p>
-    <p class="foot__fine">Listed by TODO: brokerage. Information deemed reliable but not guaranteed; buyer to verify all measurements, taxes, and conditions. Photographs by Matthew Truman Photography, used with permission.</p>
+    <p class="foot__fine">Listed by Jason Reicherts, Evenboer-Walton Realtors. Information deemed reliable but not guaranteed; buyer to verify all measurements, taxes, and conditions.</p>
     <p class="foot__fine">604jenks.homes</p>
   </div>
 </footer>
@@ -175,7 +190,6 @@
   <button class="lb__nav lb__nav--next" id="lb-next" type="button" aria-label="Next photograph">&#8250;</button>
 </div>
 
-<!-- TODO: update every value below once the ledger above is filled in. -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -191,9 +205,11 @@
     "postalCode": "49006",
     "addressCountry": "US"
   },
-  "numberOfBedrooms": 0,
-  "numberOfBathroomsTotal": 0,
-  "floorSize": { "@type": "QuantitativeValue", "value": 0, "unitCode": "FTK" }
+  "numberOfBedrooms": 3,
+  "numberOfBathroomsTotal": 2.5,
+  "yearBuilt": 1949,
+  "floorSize": { "@type": "QuantitativeValue", "value": 1412, "unitCode": "FTK" },
+  "lotSize": { "@type": "QuantitativeValue", "value": 0.4, "unitCode": "ACR" }
 }
 </script>
 
