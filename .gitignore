@@ -1,0 +1,19 @@
+# Source photography. 35 originals, ~166 MB.
+# Git keeps every version of every binary forever. Once these are committed
+# the repo carries them permanently, even after deletion. Derivatives in
+# assets/property are what ship.
+originals/
+
+# Node
+node_modules/
+npm-debug.log*
+
+# Local Cloudflare state and secrets
+.wrangler/
+.dev.vars
+.env
+.env.*
+
+# OS cruft
+.DS_Store
+Thumbs.db
