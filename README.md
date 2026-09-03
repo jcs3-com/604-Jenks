@@ -8,6 +8,14 @@ so work can continue without prior conversation context.
 
 ---
 
+## Migration status
+
+Cloudflare Pages (classic) connected 2026-09-02. This commit exists to trigger
+the first preview build for this branch — Pages builds on push, and this
+branch predates the connection, so no build had fired yet.
+
+---
+
 ## Current state
 
 | | |
@@ -15,7 +23,7 @@ so work can continue without prior conversation context.
 | Domain | 604jenks.homes |
 | Live now | `main`, served by GitHub Pages — the old coming-soon page |
 | Built | `feat/gallery-pipeline`, PR #1 — **not merged, deliberately** |
-| Next step | Migrate to Cloudflare Pages, then merge |
+| Next step | Verify the branch preview, then configure D1/Resend/Turnstile/Access, then merge |
 
 ### Why the branch is not merged
 
@@ -73,19 +81,22 @@ this is a 1949 colonial in Westwood.
 
 ## Cloudflare migration runbook
 
-1. **Pages** → Connect to Git → `Jcs3-com/604-Jenks`
+1. **Pages** → Connect to Git → `Jcs3-com/604-Jenks`. DONE 2026-09-02.
    Build command: none. Output directory: `/`
-2. **Custom domain** → 604jenks.homes
-3. **Disable GitHub Pages** in repo settings and delete `CNAME`.
+2. **Verify the branch preview** for `feat/gallery-pipeline` builds and renders
+   correctly — hero, five sections, dashed-outline TODOs, gallery placeholder
+   text, form present (submission will fail until the Function is wired below).
+3. **Custom domain** → 604jenks.homes
+4. **Disable GitHub Pages** in repo settings and delete `CNAME`.
    Otherwise an ungated copy keeps serving.
-4. **Make the repository private.** Access protects the Pages deployment but not
+5. **Make the repository private.** Access protects the Pages deployment but not
    `github.com` or `raw.githubusercontent.com`, which serve the source and the
    hero image to anyone with the URL. Gating the site while the repo is public
    accomplishes nothing.
-5. **Zero Trust → Access → Applications → Self-hosted** → 604jenks.homes
+6. **Zero Trust → Access → Applications → Self-hosted** → 604jenks.homes
    Allow policy, one-time PIN, three emails: Dustin, Jason Reicherts, James.
    Free to 50 users. This is the password gate.
-6. **D1** → create database, bind as `DB`, run:
+7. **D1** → create database, bind as `DB`, run:
 
 ```sql
 CREATE TABLE inquiries (
@@ -98,11 +109,11 @@ CREATE TABLE inquiries (
 );
 ```
 
-7. **Resend** → add 604jenks.homes, publish SPF and DKIM, generate an API key.
+8. **Resend** → add 604jenks.homes, publish SPF and DKIM, generate an API key.
    Domain verification is what makes mail to a Gmail inbox actually land.
-8. **Turnstile** → create a widget. Site key goes into the commented block in
+9. **Turnstile** → create a widget. Site key goes into the commented block in
    `index.html`; secret goes into env.
-9. **Environment variables**
+10. **Environment variables**
 
 ```
 RESEND_API_KEY      secret
@@ -111,7 +122,7 @@ NOTIFY_TO           broker@…, owner@…      comma separated
 NOTIFY_FROM         inquiries@604jenks.homes
 ```
 
-10. **Merge PR #1**, then send a live test submission and confirm it lands in
+11. **Merge PR #1**, then send a live test submission and confirm it lands in
     the broker's inbox rather than spam.
 
 Everything above is free tier: Pages unlimited static, Functions 100k/day,
