@@ -10,9 +10,13 @@ so work can continue without prior conversation context.
 
 ## Migration status
 
-Cloudflare Pages (classic) connected 2026-09-02. This commit exists to trigger
-the first preview build for this branch — Pages builds on push, and this
-branch predates the connection, so no build had fired yet.
+Cloudflare Pages (classic) is connected to GitHub. The production branch is
+`main`; preview deployments are building from `feat/gallery-pipeline`.
+
+R2 and D1 are configured in `wrangler.toml`:
+
+- `GALLERY_IMAGES` -> R2 bucket `604-jenks-images`
+- `DB` -> D1 database `604-jenks-inquiries`
 
 ---
 
@@ -21,21 +25,18 @@ branch predates the connection, so no build had fired yet.
 | | |
 |---|---|
 | Domain | 604jenks.homes |
-| Live now | `main`, served by GitHub Pages — the old coming-soon page |
-| Built | `feat/gallery-pipeline`, PR #1 — **not merged, deliberately** |
-| Next step | Verify the branch preview, then configure D1/Resend/Turnstile/Access, then merge |
+| Live now | `main`, currently the old coming-soon page until PR #1 is merged |
+| Built | `feat/gallery-pipeline`, PR #1 |
+| Next step | Merge PR #1, verify production, then attach/cut over the custom domain |
 
-### Why the branch is not merged
+### Launch notes
 
-Merging deploys to GitHub Pages, and three things break:
+Merging PR #1 deploys the new site to Cloudflare Pages production because
+Cloudflare is connected to GitHub and `main` is the production branch.
 
-1. **The form dies.** It posts to `/api/inquiry`, a Cloudflare Pages Function.
-   GitHub Pages has no server and returns 405 on POST.
-2. **The page goes public with placeholders.** Every unresolved value is marked
-   `TODO` and carries `data-todo`, which paints a dashed outline in the browser.
-3. **It may start an MLS clock.** See Compliance below.
-
-Merge after Cloudflare Pages is connected and Access is configured.
+The old GitHub Pages custom-domain file has been removed. DNS for
+`604jenks.homes` must be cut over from GitHub Pages to Cloudflare Pages before
+the custom domain serves the new site.
 
 ---
 
@@ -48,7 +49,8 @@ assets/js/site.js           Gallery, lightbox, share control, inquiry attributio
 functions/api/inquiry.js    Cloudflare Pages Function. Inert on GitHub Pages.
 tools/build-gallery.mjs     Image pipeline. Run locally.
 604-jenks-hero.jpg          Hero. Referenced as a file, not inlined.
-CNAME                       Delete when DNS moves to Cloudflare.
+wrangler.toml               Cloudflare Pages bindings for R2 and D1.
+migrations/                 D1 schema for captured inquiries.
 ```
 
 ### What was fixed in the rebuild
@@ -84,19 +86,19 @@ this is a 1949 colonial in Westwood.
 1. **Pages** → Connect to Git → `Jcs3-com/604-Jenks`. DONE 2026-09-02.
    Build command: none. Output directory: `/`
 2. **Verify the branch preview** for `feat/gallery-pipeline` builds and renders
-   correctly — hero, five sections, dashed-outline TODOs, gallery placeholder
-   text, form present (submission will fail until the Function is wired below).
-3. **Custom domain** → 604jenks.homes
-4. **Disable GitHub Pages** in repo settings and delete `CNAME`.
-   Otherwise an ungated copy keeps serving.
-5. **Make the repository private.** Access protects the Pages deployment but not
+   correctly — hero, five sections, R2 gallery images, form present.
+3. **Merge PR #1** so `main` deploys to Cloudflare Pages production.
+4. **Custom domain** → 604jenks.homes
+5. **Disable GitHub Pages** in repo settings. `CNAME` has already been removed
+   from this branch.
+6. **Make the repository private.** Access protects the Pages deployment but not
    `github.com` or `raw.githubusercontent.com`, which serve the source and the
    hero image to anyone with the URL. Gating the site while the repo is public
    accomplishes nothing.
-6. **Zero Trust → Access → Applications → Self-hosted** → 604jenks.homes
+7. **Zero Trust → Access → Applications → Self-hosted** → 604jenks.homes
    Allow policy, one-time PIN, three emails: Dustin, Jason Reicherts, James.
    Free to 50 users. This is the password gate.
-7. **D1** → create database, bind as `DB`, run:
+8. **D1** → created as `604-jenks-inquiries`, bound as `DB`, schema:
 
 ```sql
 CREATE TABLE inquiries (
@@ -109,11 +111,11 @@ CREATE TABLE inquiries (
 );
 ```
 
-8. **Resend** → add 604jenks.homes, publish SPF and DKIM, generate an API key.
+9. **Resend** → add 604jenks.homes, publish SPF and DKIM, generate an API key.
    Domain verification is what makes mail to a Gmail inbox actually land.
-9. **Turnstile** → create a widget. Site key goes into the commented block in
-   `index.html`; secret goes into env.
-10. **Environment variables**
+10. **Turnstile** → optional hardening. Add a widget and wire its site key in
+    `index.html`; secret goes into env.
+11. **Environment variables for email notifications**
 
 ```
 RESEND_API_KEY      secret
@@ -122,8 +124,8 @@ NOTIFY_TO           broker@…, owner@…      comma separated
 NOTIFY_FROM         inquiries@604jenks.homes
 ```
 
-11. **Merge PR #1**, then send a live test submission and confirm it lands in
-    the broker's inbox rather than spam.
+12. Send a live test submission and confirm it appears in D1. After Resend is
+    configured, confirm it also lands in the broker's inbox rather than spam.
 
 Everything above is free tier: Pages unlimited static, Functions 100k/day,
 Access 50 users, Turnstile unlimited, D1 free tier, Resend 3,000/month.
@@ -198,8 +200,8 @@ The broker decides when it opens.
 staged but cannot execute until the site is public. Record this in the handover
 as staged-pending-unlock rather than delivered.
 
-**Remove at unlock:** the `robots noindex` meta in `index.html`, and the
-`[data-todo]` rule at the bottom of `site.css`.
+The crawler-exclusion meta and visible development markers were removed for
+public launch.
 
 ---
 
@@ -207,9 +209,10 @@ as staged-pending-unlock rather than delivered.
 
 - [ ] Questionnaire returned by the owner — verifies the ledger, supplies
       improvement years, narrative and neighborhood copy, room labels
-- [ ] Broker license number, display phone, showing procedure
-- [ ] Run the image pipeline; author alt text and room tags
-- [ ] `assets/docs/seller-disclosure.pdf` and `floor-plan.pdf`
-- [ ] Cloudflare migration per the runbook above
+- [ ] Broker license number and display phone, if the broker wants them shown
+- [ ] Resend email notification setup
+- [ ] Turnstile hardening
+- [ ] Seller disclosure and floor plan PDFs
+- [ ] Custom-domain DNS cutover from GitHub Pages to Cloudflare Pages
 - [ ] Channel designation from owner and broker (SOW section 7)
 - [ ] Cycle 1 baseline market snapshot — gate-independent, deliverable now

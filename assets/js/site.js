@@ -229,7 +229,7 @@
       if (!res.ok) throw new Error(data.error || 'Please try again.');
       form.reset();
       if (t0) t0.value = String(Date.now());
-      if (note) note.textContent = 'Inquiry sent. Expect a reply within one business day.';
+      if (note) note.textContent = 'Inquiry sent. It has been recorded for follow-up.';
     } catch (err) {
       if (note) note.textContent = err.message || 'Inquiry delivery is temporarily unavailable. Please contact the listing broker directly.';
     } finally {

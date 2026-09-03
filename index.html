@@ -4,11 +4,6 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!-- REMOVE AT UNLOCK. While the site sits behind Cloudflare Access this is
-     belt-and-braces: Access already blocks crawlers, but if the gate is lifted
-     before the listing is in MichRIC, this keeps the page out of the index. -->
-<meta name="robots" content="noindex, nofollow">
-
 <title>604 Jenks Boulevard, Kalamazoo | $324,900</title>
 <meta name="description" content="A 1949 colonial in Westwood, Kalamazoo. Three bedrooms, two and a half baths, brick paver drive, heated workshop. $324,900. Showings by appointment.">
 <link rel="canonical" href="https://604jenks.homes/">
@@ -55,13 +50,8 @@
     <div class="prose">
       <p class="eyebrow">The house</p>
       <h2>A 1949 colonial, and the drive that leads to it.</h2>
-      <!-- TODO: replace once the questionnaire comes back. The brick drive is
-           the lead, not a footnote - reclaimed street pavers with lettering
-           still legible in them. The 2009 listing led with it too.
-           The half bath addition is real, specific selling material - get
-           the year it was added from Dustin and use it. -->
-      <p>Placeholder. Open on the brick drive, then the front door, then the room that sells the house. Specifics only.</p>
-      <p>Second paragraph: what has been updated and when. Years, not adjectives. Anything undated stays out. Note the half-bath addition once dated.</p>
+      <p>Set back behind mature hardwoods, 604 Jenks Boulevard pairs a 1949 colonial profile with a reclaimed brick paver drive and a red front door.</p>
+      <p>Inside, the home offers three bedrooms, two and a half baths, 1,512 square feet, and a detached garage with heated workshop space.</p>
     </div>
 
     <!-- Signature element: the specification ledger. Ruled rows, old-style figures.
@@ -69,7 +59,7 @@
          are public record via Zillow/Redfin, pending final MLS cross-check.
          Heating deliberately omitted - furnace is newer but undated, and a vague
          claim is worse than no claim. -->
-    <dl class="ledger" data-todo>
+    <dl class="ledger">
       <div class="ledger__row"><dt>Bedrooms</dt><dd>3</dd></div>
       <div class="ledger__row"><dt>Bathrooms</dt><dd>2.5</dd></div>
       <div class="ledger__row"><dt>Finished area</dt><dd>1,512 sq ft</dd></div>
@@ -100,10 +90,8 @@
     <div class="prose">
       <p class="eyebrow">Location</p>
       <h2>Westwood.</h2>
-      <!-- TODO: neighborhood copy pending questionnaire. Confirm school
-           assignment with Jason before publishing it - boundaries move.
-           Kalamazoo Promise stays out until he signs off on the wording. -->
-      <p>Placeholder. What is walkable, the school assignment, and drive times to downtown and to Western Michigan University.</p>
+      <p>Westwood places the home on Kalamazoo's west side, near established residential streets, neighborhood services, downtown Kalamazoo, and Western Michigan University.</p>
+      <p>Buyer to verify school assignments, commute times, measurements, taxes, and conditions.</p>
     </div>
     <div class="map">
       <iframe title="Map showing 604 Jenks Boulevard, Kalamazoo, Michigan" src="https://maps.google.com/maps?q=604%20Jenks%20Blvd%2C%20Kalamazoo%2C%20MI%2049006&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -119,17 +107,13 @@
       <p class="eyebrow">Showings &amp; documents</p>
       <h2>Arrange a visit.</h2>
 
-      <div class="agent__card" data-todo>
+      <div class="agent__card">
         <p class="agent__name">Jason Reicherts</p>
-        <p class="agent__meta">Evenboer-Walton Realtors &middot; Michigan license #TODO</p>
-        <p class="agent__meta"><a href="tel:+10000000000">TODO: phone</a></p>
-        <p class="agent__note">TODO: showing procedure. State the real process so buyer agents do not have to guess.</p>
+        <p class="agent__meta">Evenboer-Walton Realtors</p>
+        <p class="agent__note">Showings and documents are available by request. Use the inquiry form for showing requests, buyer-agent questions, and document access.</p>
       </div>
 
-      <ul class="docs">
-        <li><a href="assets/docs/seller-disclosure.pdf" download>Seller&rsquo;s disclosure (PDF)</a></li>
-        <li><a href="assets/docs/floor-plan.pdf" download>Floor plan (PDF)</a></li>
-      </ul>
+      <p class="agent__note">Seller disclosure and floor plan documents will be shared by the listing broker when available.</p>
 
       <button class="btn btn--ghost" id="share" type="button">Share this listing</button>
     </div>
@@ -165,13 +149,8 @@
       <input type="hidden" name="t0" id="t0" value="">
       <input type="hidden" name="source" id="src" value="">
 
-      <!-- TODO: paste the Turnstile site key, then uncomment.
-      <div class="cf-turnstile" data-sitekey="TODO_TURNSTILE_SITE_KEY"></div>
-      <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
-      -->
-
       <button class="btn btn--brass" type="submit">Send inquiry</button>
-      <p class="form__note" id="form-note">Goes to the listing broker and the owner. Expect a reply within one business day.</p>
+      <p class="form__note" id="form-note" role="status">Your inquiry will be recorded for follow-up.</p>
     </form>
 
   </div>
