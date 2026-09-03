@@ -189,6 +189,9 @@
 
   const params = new URLSearchParams(location.search);
   const src = document.getElementById('src');
+  const t0 = document.getElementById('t0');
+  if (t0) t0.value = String(Date.now());
+
   if (src) {
     src.value = [
       params.get('utm_source') || params.get('src') || 'direct',
@@ -202,6 +205,39 @@
   const subj = document.getElementById('subj');
   intent?.addEventListener('change', () => {
     if (subj) subj.value = `604 Jenks - ${intent.value || 'inquiry'}`;
+  });
+
+  const form = document.getElementById('inquiry');
+  const note = document.getElementById('form-note');
+  form?.addEventListener('submit', async e => {
+    e.preventDefault();
+    const btn = form.querySelector('button[type="submit"]');
+    const was = btn?.textContent || 'Send inquiry';
+    if (btn) {
+      btn.disabled = true;
+      btn.textContent = 'Sending...';
+    }
+    if (note) note.textContent = 'Sending your inquiry...';
+
+    try {
+      const res = await fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { accept: 'application/json' },
+      });
+      const data = await res.json().catch(() => ({}));
+      if (!res.ok) throw new Error(data.error || 'Please try again.');
+      form.reset();
+      if (t0) t0.value = String(Date.now());
+      if (note) note.textContent = 'Inquiry sent. Expect a reply within one business day.';
+    } catch (err) {
+      if (note) note.textContent = err.message || 'Inquiry delivery is temporarily unavailable. Please contact the listing broker directly.';
+    } finally {
+      if (btn) {
+        btn.disabled = false;
+        btn.textContent = was;
+      }
+    }
   });
 
   render();

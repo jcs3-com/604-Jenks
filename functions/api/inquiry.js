@@ -48,6 +48,12 @@ async function humanCheck(token, ip, secret) {
 }
 
 export async function onRequestPost({ request, env }) {
+  const hasDb = env.DB && typeof env.DB.prepare === 'function';
+  const canMail = Boolean(env.RESEND_API_KEY && env.NOTIFY_FROM && env.NOTIFY_TO);
+  if (!hasDb && !canMail) {
+    return fail(503, 'Inquiry delivery is not configured yet. Please contact the listing broker directly.');
+  }
+
   let f;
   try {
     f = Object.fromEntries(await request.formData());
@@ -84,24 +90,27 @@ export async function onRequestPost({ request, env }) {
   };
 
   /* 1. Durable write. This is the record of truth for the cycle report. */
-  let id = null;
-  try {
-    const res = await env.DB.prepare(
-      `INSERT INTO inquiries (created_at, name, email, phone, intent, message, source, ip, country)
-       VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)`
-    ).bind(row.created_at, row.name, row.email, row.phone, row.intent,
-           row.message, row.source, row.ip, row.country).run();
-    id = res.meta?.last_row_id ?? null;
-  } catch (e) {
-    console.error('D1 insert failed', e);
-    /* Keep going. Losing the log is bad; losing the lead is worse. */
+  let id = null, logged = false;
+  if (hasDb) {
+    try {
+      const res = await env.DB.prepare(
+        `INSERT INTO inquiries (created_at, name, email, phone, intent, message, source, ip, country)
+         VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)`
+      ).bind(row.created_at, row.name, row.email, row.phone, row.intent,
+             row.message, row.source, row.ip, row.country).run();
+      id = res.meta?.last_row_id ?? null;
+      logged = true;
+    } catch (e) {
+      console.error('D1 insert failed', e);
+      /* Keep going if mail is configured. Losing the log is bad; losing the lead is worse. */
+    }
   }
 
   /* 2. Notify. Reply-To carries the visitor so a reply reaches them directly.
         From stays on our verified domain - putting the visitor's address in
         From is the single most common cause of DMARC rejection. */
   let mailed = 0;
-  try {
+  if (canMail) try {
     const r = await fetch('https://api.resend.com/emails', {
       method: 'POST',
       headers: {
@@ -131,6 +140,10 @@ export async function onRequestPost({ request, env }) {
     if (!r.ok) console.error('Resend rejected', r.status, await r.text());
   } catch (e) {
     console.error('Resend request failed', e);
+  }
+
+  if (!logged && !mailed) {
+    return fail(503, 'Inquiry delivery is temporarily unavailable. Please contact the listing broker directly.');
   }
 
   if (id !== null) {
