@@ -11,8 +11,10 @@
   const MANIFEST = 'assets/data/gallery.json';
   const grid = document.getElementById('gallery-grid');
 
-  /* Order rooms the way a buyer walks the house, not alphabetically. */
-  const ROOM_ORDER = ['Exterior', 'Living', 'Dining', 'Kitchen', 'Bedroom',
+  /* Order rooms the way a buyer walks the house, not alphabetically.
+     Any room value used in gallery.json must appear here, or its tiles
+     sort to the bottom of the grid. */
+  const ROOM_ORDER = ['Exterior', 'Entry', 'Living', 'Dining', 'Kitchen', 'Bedroom',
                       'Bath', 'Lower Level', 'Grounds', 'Aerial'];
 
   let shots = [];
