@@ -1,0 +1,318 @@
+{
+  "property": "604 Jenks Blvd, Kalamazoo, MI 49006",
+  "generated": "2026-09-03T00:58:31.484Z",
+  "basePath": "/assets/property",
+  "scopeCap": 25,
+  "images": [
+    {
+      "source": "Jenks_Blvd_604_Kalamazoo_49006-1.webp",
+      "sourceNum": 1,
+      "slug": "jenks-01-1237dc1a",
+      "width": 3200,
+      "height": 2133,
+      "aspectRatio": 1.5002,
+      "widths": [400, 800, 1200, 1600, 2400],
+      "formats": ["avif", "webp", "jpg"],
+      "lqip": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAAAQBACdASoUAA0APu1iqk2ppaQiMAgBMB2JaACdMoABqD7QCBvfbm21IADwop3qr9idnRZMWYQ6536IhYqHmjUsPUM/Povh9vKnNJzhZrxOR4AA",
+      "alt": "604 Jenks Boulevard from the street: a two-story colonial with dark green shutters and a red front door, set back behind mature hardwoods, with a reclaimed brick paver drive leading to a detached garage.",
+      "room": "Exterior", "order": 1, "include": true, "hero": true
+    },
+    {
+      "source": "Jenks_Blvd_604_Kalamazoo_49006-35.jpg",
+      "sourceNum": 35,
+      "slug": "jenks-35-9dd4b234",
+      "width": 3200, "height": 2133, "aspectRatio": 1.5002,
+      "widths": [400, 800, 1200, 1600, 2400],
+      "formats": ["avif", "webp", "jpg"],
+      "lqip": "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAABwAgCdASoUAA0AA4BaJQBYdh0+Cq1onpnl5YqAAPZ9JHWmN0O+SiSk7ACiNtn93R35pFa2sArB+X4u5V6ql0xFQAA=",
+      "alt": "The red front door and brick entry walk, with the brick paver drive continuing past house numbers reading 604.",
+      "room": "Exterior", "order": 2, "include": true, "hero": false
+    },
+    {
+      "source": "Jenks_Blvd_604_Kalamazoo_49006-18.jpg",
+      "sourceNum": 18,
+      "slug": "jenks-18-a4a76182",
+      "width": 3200, "height": 2133, "aspectRatio": 1.5002,
+      "widths": [400, 800, 1200, 1600, 2400],
+      "formats": ["avif", "webp", "jpg"],
+      "lqip": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAADQAwCdASoUAA0APu1mqk2ppaQiMAgBMB2JZQDA3B6Rr9C/4Nw6GzAA/sPbCLQI04P5XH2HEtxXuARlODxoc39ioU+6qSdUAAA=",
+      "alt": "Rear of the house showing the family room addition with french doors opening onto the brick patio.",
+      "room": "Exterior", "order": 3, "include": true, "hero": false
+    },
+    {
+      "source": "Jenks_Blvd_604_Kalamazoo_49006-3.jpg",
+      "sourceNum": 3,
+      "slug": "jenks-03-2c6721e7",
+      "width": 3200, "height": 2133, "aspectRatio": 1.5002,
+      "widths": [400, 800, 1200, 1600, 2400],
+      "formats": ["avif", "webp", "jpg"],
+      "lqip": "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAAAQAwCdASoUAA0APu1iqU2ppaOiMAgBMB2JQBfJAdOO4YAA/tObQAb7yhrEV/ObG6FfjK4/onHhJvHSOAu4hO4EAAA=",
+      "alt": "Detached two-car garage with a vented gable window, viewed from the driveway.",
+      "room": "Exterior", "order": 4, "include": true, "hero": false
+    },
+    {
+      "source": "Jenks_Blvd_604_Kalamazoo_49006-5.jpg",
+      "sourceNum": 5,
+      "slug": "jenks-05-2927562d",
+      "width": 3200, "height": 2133, "aspectRatio": 1.5002,
+      "widths": [400, 800, 1200, 1600, 2400],
+      "formats": ["avif", "webp", "jpg"],
+      "lqip": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAADwAwCdASoUAA0APu1iqU2ppaOiMAgBMB2JYwC+SCHUwW26uV7Jx/oAAP7UCDZjHbljx5WEVMzk0NXpQ52M8tOSID8pkoxwhlpCd8GK25ODiGAA",
+      "alt": "Living room fireplace with painted brick surround, wood mantel beam, and built-in bookshelves.",
+      "room": "Living", "order": 6, "include": true, "hero": false
+    },
+    {
+      "source": "Jenks_Blvd_604_Kalamazoo_49006-7.jpg",
+      "sourceNum": 7,
+      "slug": "jenks-07-49463da9",
+      "width": 3200, "height": 2133, "aspectRatio": 1.5002,
+      "widths": [400, 800, 1200, 1600, 2400],
+      "formats": ["avif", "webp", "jpg"],
+      "lqip": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAACwAwCdASoUAA0APu1kq04ppaQiMAgBMB2JQBibBDwssIU+EkDOAAD+rxi6PmAr2FdD5qLIECI18xP10QO/L+Ro4/N4LgH3V6udgAAA",
+      "alt": "Dining room with a table seating eight, a built-in window seat visible through the doorway, and exposed ceiling beam.",
+      "room": "Dining", "order": 10, "include": true, "hero": false
+    },
+    {
+      "source": "Jenks_Blvd_604_Kalamazoo_49006-12.jpg",
+      "sourceNum": 12,
+      "slug": "jenks-12-1c71b928",
+      "width": 3200, "height": 2133, "aspectRatio": 1.5002,
+      "widths": [400, 800, 1200, 1600, 2400],
+      "formats": ["avif", "webp", "jpg"],
+      "lqip": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAADwAwCdASoUAA0APu1kqU2ppaQiMAgBMB2JZQDG9B4jJ7F/jejeyq5YAM44E4iUpDc/L/qYjJY2nxdFciax3Ds8n9gZYN7d85tsmlF4roAAAA==",
+      "alt": "Kitchen with butcher block counters, subway tile backsplash, and a gas range.",
+      "room": "Kitchen", "order": 12, "include": true, "hero": false
+    },
+    {
+      "source": "Jenks_Blvd_604_Kalamazoo_49006-10.jpg",
+      "sourceNum": 10,
+      "slug": "jenks-10-b409ffe5",
+      "width": 3200, "height": 2133, "aspectRatio": 1.5002,
+      "widths": [400, 800, 1200, 1600, 2400],
+      "formats": ["avif", "webp", "jpg"],
+      "lqip": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAADwAwCdASoUAA0APu1iqk2ppaQiMAgBMB2JZQDE+ExDAWYKK7K1jwMAAP6XU0EzxOyfP6GBwvjieCBBBvD40q3xEM7Ird1mdcAAAA==",
+      "alt": "Kitchen sink and prep area beneath a window, with pendant lighting and hanging plants.",
+      "room": "Kitchen", "order": 13, "include": true, "hero": false
+    },
+    {
+      "source": "Jenks_Blvd_604_Kalamazoo_49006-20.jpg",
+      "sourceNum": 20,
+      "slug": "jenks-20-6fe71d3f",
+      "width": 3200, "height": 2133, "aspectRatio": 1.5002,
+      "widths": [400, 800, 1200, 1600, 2400],
+      "formats": ["avif", "webp", "jpg"],
+      "lqip": "data:image/webp;base64,UklGRkwAAABXRUJQVlA4IEAAAADQAwCdASoUAA0APu1iqU2ppaOiMAgBMB2JZQDKACHfcMobTyDdJQAA/sOCgQXv8ZaHaQRuEUmhOlHmjPSAwAAA",
+      "alt": "Kitchen dining nook with a round table and built-in window seat.",
+      "room": "Kitchen", "order": 14, "include": true, "hero": false
+    },
+    {
+      "source": "Jenks_Blvd_604_Kalamazoo_49006-4.jpg",
+      "sourceNum": 4,
+      "slug": "jenks-04-c2a47fb8",
+      "width": 3200, "height": 2133, "aspectRatio": 1.5002,
+      "widths": [400, 800, 1200, 1600, 2400],
+      "formats": ["avif", "webp", "jpg"],
+      "lqip": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAACQAwCdASoUAA0APu1kqU2ppaQiMAgBMB2JZQAAW8NWAPw3NWCAAP7Dl7slEFKsVJTNyaK0GpEXZq77tJvokS6EXf+DcgkEAAA=",
+      "alt": "Bedroom with a chaise lounge chair and layered area rug, natural light from two windows.",
+      "room": "Bedroom", "order": 15, "include": true, "hero": false
+    },
+    {
+      "source": "Jenks_Blvd_604_Kalamazoo_49006-15.jpg",
+      "sourceNum": 15,
+      "slug": "jenks-15-e163e57b",
+      "width": 3200, "height": 2133, "aspectRatio": 1.5002,
+      "widths": [400, 800, 1200, 1600, 2400],
+      "formats": ["avif", "webp", "jpg"],
+      "lqip": "data:image/webp;base64,UklGRkoAAABXRUJQVlA4ID4AAACQAwCdASoUAA0APu1iqU2ppaQiMAgBMB2JZwDG9CG7dmx2ySdwAP6uw01uvv4Zi9P6Hmtl6ZzFy9n80fqgAA==",
+      "alt": "Bedroom with a dark wood dresser, mirror, and closet, layered rug over hardwood floor.",
+      "room": "Bedroom", "order": 16, "include": true, "hero": false
+    },
+    {
+      "source": "Jenks_Blvd_604_Kalamazoo_49006-24.jpg",
+      "sourceNum": 24,
+      "slug": "jenks-24-e4b26245",
+      "width": 3200, "height": 2133, "aspectRatio": 1.5002,
+      "widths": [400, 800, 1200, 1600, 2400],
+      "formats": ["avif", "webp", "jpg"],
+      "lqip": "data:image/webp;base64,UklGRkgAAABXRUJQVlA4IDwAAABQAwCdASoUAA0APu1iqU2ppaOiMAgBMB2JZwAAW6T8QMOewAD+w4DMHyPF2aVfF1vcSIVlw07ZHy3EAAA=",
+      "alt": "Laundry room with a utility sink, side-by-side washer and dryer, and an adjoining half bath.",
+      "room": "Bath", "order": 18, "include": true, "hero": false
+    },
+    {
+      "source": "Jenks_Blvd_604_Kalamazoo_49006-6.jpg",
+      "sourceNum": 6,
+      "slug": "jenks-06-43eeb8bf",
+      "width": 3200, "height": 2133, "aspectRatio": 1.5002,
+      "widths": [400, 800, 1200, 1600, 2400],
+      "formats": ["avif", "webp", "jpg"],
+      "lqip": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAACwAwCdASoUAA0APu1iqk2ppaQiMAgBMB2JQBdgA82tKGTXWo74fAD+tRrQC8026x4RPCLaWmuMkGMjXqaTs855AyHpH/VbOBkh1Ad9yQAAAA==",
+      "alt": "Brick patio off the family room addition, with a Big Green Egg grill and french doors.",
+      "room": "Grounds", "order": 20, "include": true, "hero": false
+    },
+    {
+      "source": "Jenks_Blvd_604_Kalamazoo_49006-29.webp",
+      "sourceNum": 29,
+      "slug": "jenks-29-6a3ada1d",
+      "width": 3200, "height": 2133, "aspectRatio": 1.5002,
+      "widths": [400, 800, 1200, 1600, 2400],
+      "formats": ["avif", "webp", "jpg"],
+      "lqip": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAACwAwCdASoUAA0APu1iqU2ppaQiMAgBMB2JQBadAvE7JQr1AglnYAD+jGHWomO2Hs877EO2YEeEaq3JO3P1yyAGM2+bSKAQAAA=",
+      "alt": "Reclaimed brick garden path winding through mature hosta plantings toward the rear yard.",
+      "room": "Grounds", "order": 21, "include": true, "hero": false
+    },
+    {
+      "source": "Jenks_Blvd_604_Kalamazoo_49006-13.jpg", "sourceNum": 13, "slug": "jenks-13-287ccbe0",
+      "width": 3200, "height": 2133, "aspectRatio": 1.5002, "widths": [400,800,1200,1600,2400], "formats": ["avif","webp","jpg"],
+      "lqip": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAADwAwCdASoUAA0APu1kqk4ppaQiMAgBMB2JZQDImB51uFbgiYtpuHYAAP6zoRZc7haRlJkAqeD/vLhRnKLmSu15sb9DgAAA",
+      "alt": "Front exterior from the front walk.", "room": "Exterior", "order": 90, "include": false, "hero": false,
+      "note": "near-duplicate of hero, held for Cycle 2"
+    },
+    {
+      "source": "Jenks_Blvd_604_Kalamazoo_49006-8.jpg", "sourceNum": 8, "slug": "jenks-08-333cf941",
+      "width": 3200, "height": 2133, "aspectRatio": 1.5002, "widths": [400,800,1200,1600,2400], "formats": ["avif","webp","jpg"],
+      "lqip": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAACwAwCdASoUAA0APu1iqk2ppaQiMAgBMB2JQBbZA8mX/6nQJlDFgAD+r5s1oFuH08XM9YsYtotgGJc6UUdMoE79Za7ZsNl8KFFjQ7AA",
+      "alt": "Front exterior, ground level.", "room": "Exterior", "order": 91, "include": false, "hero": false,
+      "note": "near-duplicate of hero, held for Cycle 2"
+    },
+    {
+      "source": "Jenks_Blvd_604_Kalamazoo_49006-33.webp", "sourceNum": 33, "slug": "jenks-33-8474a001",
+      "width": 3200, "height": 2133, "aspectRatio": 1.5002, "widths": [400,800,1200,1600,2400], "formats": ["avif","webp","jpg"],
+      "lqip": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAACQAwCdASoUAA0APu1kq04ppaQiMAgBMB2JQBOgAndWmI8POADQAP4TibS5Lq9PXJWBtDrjHpw9R5s8KB1+3aGQ/Q5sAdQS9wiSG62J6pBNMAAA",
+      "alt": "", "room": "Exterior", "order": 92, "include": false, "hero": false,
+      "note": "garage exterior, near-duplicate of #3, held for Cycle 2"
+    },
+    {
+      "source": "Jenks_Blvd_604_Kalamazoo_49006-27.jpg", "sourceNum": 27, "slug": "jenks-27-ca525590",
+      "width": 3200, "height": 2133, "aspectRatio": 1.5002, "widths": [400,800,1200,1600,2400], "formats": ["avif","webp","jpg"],
+      "lqip": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAADwAwCdASoUAA0APu1mq04ppaQiMAgBMB2JQBWECYhgWhg19kDDqxl8APhZdFjH7vpx1Ye2xXDWKTY1t+J4FBh8L/RU05bHeho4yPmAAAA=",
+      "alt": "", "room": "Exterior", "order": 93, "include": false, "hero": false,
+      "note": "garage interior — storage/clutter, personal items and tools visible; needs staging before publish, not shipping as-is"
+    },
+    {
+      "source": "Jenks_Blvd_604_Kalamazoo_49006-9.jpg", "sourceNum": 9, "slug": "jenks-09-2ea3bd03",
+      "width": 3200, "height": 2133, "aspectRatio": 1.5002, "widths": [400,800,1200,1600,2400], "formats": ["avif","webp","jpg"],
+      "lqip": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAACwAwCdASoUAA0APu1krU2ppaSiMAgBMB2JZwAAWyaWdemClIic2AD+wziNr8JNNwEF7b7WyW2unOr0LgFQF+OmY6cfr2ZPVgAAAA==",
+      "alt": "", "room": "Grounds", "order": 94, "include": false, "hero": false,
+      "note": "near-duplicate garden path, held for Cycle 2"
+    },
+    {
+      "source": "Jenks_Blvd_604_Kalamazoo_49006-30.webp", "sourceNum": 30, "slug": "jenks-30-86e568c8",
+      "width": 3200, "height": 2133, "aspectRatio": 1.5002, "widths": [400,800,1200,1600,2400], "formats": ["avif","webp","jpg"],
+      "lqip": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAACQAwCdASoUAA0APu1kqU4ppaOiMAgBMB2JZACdABgJe9kU6tG8APiPsomOo22tQ8u4eRJLarIyMNZK9sra+UP8zvBydibcH21B3aMsmiAgAA==",
+      "alt": "", "room": "Grounds", "order": 95, "include": false, "hero": false,
+      "note": "near-duplicate garden path, held for Cycle 2"
+    },
+    {
+      "source": "Jenks_Blvd_604_Kalamazoo_49006-28.webp", "sourceNum": 28, "slug": "jenks-28-8046702c",
+      "width": 3200, "height": 2133, "aspectRatio": 1.5002, "widths": [400,800,1200,1600,2400], "formats": ["avif","webp","jpg"],
+      "lqip": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAACwAwCdASoUAA0APu1kqk4ppaQiMAgBMB2JQBOgA3SB8Ae15ghwAAD+uwjSeBtehgAsok/OvyEHWwgD9CI5H8JnNEacjVPQxcWYuAAA",
+      "alt": "", "room": "Dining", "order": 96, "include": false, "hero": false,
+      "note": "near-duplicate dining shot, held for Cycle 2"
+    },
+    {
+      "source": "Jenks_Blvd_604_Kalamazoo_49006-2.jpg", "sourceNum": 2, "slug": "jenks-02-1a0fb099",
+      "width": 3200, "height": 2133, "aspectRatio": 1.5002, "widths": [400,800,1200,1600,2400], "formats": ["avif","webp","jpg"],
+      "lqip": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAABwAwCdASoUAA0APu1iqU2ppaQiMAgBMB2JaQAAW+vmzxFDjIAA/q8OY7Pu2pWHscc/wCNjDjHEcAAA",
+      "alt": "", "room": "Living", "order": 97, "include": false, "hero": false,
+      "note": "near-duplicate living room, held for Cycle 2"
+    },
+    {
+      "source": "Jenks_Blvd_604_Kalamazoo_49006-11.jpg", "sourceNum": 11, "slug": "jenks-11-1a9cc885",
+      "width": 3200, "height": 2133, "aspectRatio": 1.5002, "widths": [400,800,1200,1600,2400], "formats": ["avif","webp","jpg"],
+      "lqip": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAADQAwCdASoUAA0APu1iqU2ppaQiMAgBMB2JZQDE2CHEOiZCdq9638AA/o67BL27QxmL8le3z5mLbmLnVHy5aOT+QdbY1KoAAAA=",
+      "alt": "", "room": "Kitchen", "order": 98, "include": false, "hero": false,
+      "note": "near-duplicate kitchen angle, held for Cycle 2"
+    },
+    {
+      "source": "Jenks_Blvd_604_Kalamazoo_49006-25.jpg", "sourceNum": 25, "slug": "jenks-25-ce1db7f8",
+      "width": 3200, "height": 2133, "aspectRatio": 1.5002, "widths": [400,800,1200,1600,2400], "formats": ["avif","webp","jpg"],
+      "lqip": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAADQAwCdASoUAA0APu1kqk2ppaQiMAgBMB2JZwDE2CHYn8UTxZC87cgA/sMh6wonTPqydr6q6DDKkr88DlkNvgXYFc69imgjIavrXRcAAAA=",
+      "alt": "", "room": "Kitchen", "order": 99, "include": false, "hero": false,
+      "note": "PRIVATE INFORMATION VISIBLE — chalkboard lists family travel plans. Exclude permanently or reshoot after erasing."
+    },
+    {
+      "source": "Jenks_Blvd_604_Kalamazoo_49006-32.webp", "sourceNum": 32, "slug": "jenks-32-21d38803",
+      "width": 3200, "height": 2133, "aspectRatio": 1.5002, "widths": [400,800,1200,1600,2400], "formats": ["avif","webp","jpg"],
+      "lqip": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAADQAwCdASoUAA0APu1iqU2ppaOiMAgBMB2JZgCdACFTPsiHsCHjL4AA8IoXpl4H3EcJzft7nkeLKsITHLFxAfSm3xlvVkIFJcEJ+kN2wkHNk64AAAA=",
+      "alt": "", "room": "Kitchen", "order": 99, "include": false, "hero": false,
+      "note": "PRIVATE INFORMATION VISIBLE — same chalkboard as #25. Exclude permanently or reshoot after erasing."
+    },
+    {
+      "source": "Jenks_Blvd_604_Kalamazoo_49006-16.jpg", "sourceNum": 16, "slug": "jenks-16-0f581241",
+      "width": 3200, "height": 2133, "aspectRatio": 1.5002, "widths": [400,800,1200,1600,2400], "formats": ["avif","webp","jpg"],
+      "lqip": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAABQAwCdASoUAA0APu1mq04ppaQiMAgBMB2JZwDImBfazIuxwAD+jxFTODqyKljs+FjTusEZuc95KnKSEll4AEYVPaO8+AAA",
+      "alt": "", "room": "Bedroom", "order": 100, "include": false, "hero": false,
+      "note": "near-duplicate of #15, held for Cycle 2"
+    },
+    {
+      "source": "Jenks_Blvd_604_Kalamazoo_49006-19.jpg", "sourceNum": 19, "slug": "jenks-19-a6f202ee",
+      "width": 3200, "height": 2133, "aspectRatio": 1.5002, "widths": [400,800,1200,1600,2400], "formats": ["avif","webp","jpg"],
+      "lqip": "data:image/webp;base64,UklGRkwAAABXRUJQVlA4IEAAAACwAgCdASoUAA0AA4BaJYwDImEPCEy8s9i/48lw54AA/rTNuJc58SJdblKwB6CZ9VG3SVBbwO5h8SPtiaYpwAAA",
+      "alt": "", "room": "Bedroom", "order": 101, "include": false, "hero": false,
+      "note": "personal effects visible (family photos, keepsakes); usable if cropped or with owner sign-off"
+    },
+    {
+      "source": "Jenks_Blvd_604_Kalamazoo_49006-17.jpg", "sourceNum": 17, "slug": "jenks-17-18413236",
+      "width": 3200, "height": 2133, "aspectRatio": 1.5002, "widths": [400,800,1200,1600,2400], "formats": ["avif","webp","jpg"],
+      "lqip": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAADQAwCdASoUAA0APu1krU2ppaSiMAgBMB2JZQDA3CHITDhjuSxttQAA/q8H/3Hn2956upWUfRQym74vQpd7IYMENoK0edkAAAA=",
+      "alt": "", "room": "Bedroom", "order": 102, "include": false, "hero": false,
+      "note": "child’s room with personal effects (name sign, toys); exclude unless reshot"
+    },
+    {
+      "source": "Jenks_Blvd_604_Kalamazoo_49006-14.jpg", "sourceNum": 14, "slug": "jenks-14-30b12ee4",
+      "width": 3200, "height": 2133, "aspectRatio": 1.5002, "widths": [400,800,1200,1600,2400], "formats": ["avif","webp","jpg"],
+      "lqip": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAADQAwCdASoUAA0APu1orU6ppiSiMAgBMB2JQBibBDiJcPHrX/4YRAAA/ousm1GjJJg4lsEsXtW8fQ7kuPEwQhbiSTt8fSqcaAA=",
+      "alt": "", "room": "Bath", "order": 103, "include": false, "hero": false,
+      "note": "CONFIRM WITH DUSTIN: same half bath as #24 from another angle, or a distinct third bath? Do not caption until resolved."
+    },
+    {
+      "source": "Jenks_Blvd_604_Kalamazoo_49006-22.jpg", "sourceNum": 22, "slug": "jenks-22-f2a7d962",
+      "width": 3200, "height": 2133, "aspectRatio": 1.5002, "widths": [400,800,1200,1600,2400], "formats": ["avif","webp","jpg"],
+      "lqip": "data:image/webp;base64,UklGRkwAAABXRUJQVlA4IEAAAABQAwCdASoUAA0APu1kqk4ppaQiMAgBMB2JZwC7AAagUC0uAAD8geeIZhn1FYzMpF4Ecf6ZSG531Db+b7czoYAA",
+      "alt": "", "room": "Lower Level", "order": 104, "include": false, "hero": false,
+      "note": "personal items visible (child’s name on shelf, toys); usable if cropped"
+    },
+    {
+      "source": "Jenks_Blvd_604_Kalamazoo_49006-23.jpg", "sourceNum": 23, "slug": "jenks-23-3b0bf32c",
+      "width": 3200, "height": 2133, "aspectRatio": 1.5002, "widths": [400,800,1200,1600,2400], "formats": ["avif","webp","jpg"],
+      "lqip": "data:image/webp;base64,UklGRkoAAABXRUJQVlA4ID4AAACQAwCdASoUAA0APu1kqU2ppaQiMAgBMB2JZwAAQt3PNsUTloagAP6M2nMIp/LkZ87vy+i/8jfWpquZjUAAAA==",
+      "alt": "", "room": "Lower Level", "order": 105, "include": false, "hero": false,
+      "note": "second fireplace confirmed on lower level — good feature, but confirm whether decorative or functional before captioning"
+    },
+    {
+      "source": "Jenks_Blvd_604_Kalamazoo_49006-26.jpg", "sourceNum": 26, "slug": "jenks-26-7e265373",
+      "width": 3200, "height": 2133, "aspectRatio": 1.5002, "widths": [400,800,1200,1600,2400], "formats": ["avif","webp","jpg"],
+      "lqip": "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAADQAwCdASoUAA0APu1kqU2ppaQiMAgBMB2JZwAAW0nHQzL5dd2F+SAA/tNsMtIhSOwWD8hHUA7ZgzJMwNLyC7l3WAA=",
+      "alt": "", "room": "Lower Level", "order": 106, "include": false, "hero": false,
+      "note": "personal effects visible (instruments, posters, records); reads as lived-in rather than staged"
+    },
+    {
+      "source": "Jenks_Blvd_604_Kalamazoo_49006-21.jpg", "sourceNum": 21, "slug": "jenks-21-68b9ce62",
+      "width": 3200, "height": 2133, "aspectRatio": 1.5002, "widths": [400,800,1200,1600,2400], "formats": ["avif","webp","jpg"],
+      "lqip": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAABwAwCdASoUAA0APu1mqk4ppaOiMAgBMB2JZQAAMH1pFIRImMAA/o8RU5PyShhVyYhME6kHf9wPM635lVMyf3ATNEn/HDKLuuAAAA==",
+      "alt": "", "room": "Bedroom", "order": 999, "include": false, "hero": false,
+      "note": "not yet reviewed in detail — flag for questionnaire"
+    },
+    {
+      "source": "Jenks_Blvd_604_Kalamazoo_49006-31.webp", "sourceNum": 31, "slug": "jenks-31-c6d8c346",
+      "width": 3200, "height": 2133, "aspectRatio": 1.5002, "widths": [400,800,1200,1600,2400], "formats": ["avif","webp","jpg"],
+      "lqip": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAADwAwCdASoUAA0APu1krU2ppaSiMAgBMB2JQBOmUABVXNl9VsDzvCxAAP5fGQioqkqJEGch4sdjH/3qFJEGlmEqAD2pP51VH/oVwjoKKvxpDOAA",
+      "alt": "", "room": "Grounds", "order": 999, "include": false, "hero": false,
+      "note": "sunroom/patio exterior detail, near-duplicate of #18"
+    },
+    {
+      "source": "Jenks_Blvd_604_Kalamazoo_49006-34.webp", "sourceNum": 34, "slug": "jenks-34-092b0089",
+      "width": 3200, "height": 2133, "aspectRatio": 1.5002, "widths": [400,800,1200,1600,2400], "formats": ["avif","webp","jpg"],
+      "lqip": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAABQAwCdASoUAA0APu1iqU2ppaOiMAgBMB2JQBOgAq3qhDayAAD7RpcP2yLXziG1TGFOb4ztfw8f0zNqmaWEZjnfRrm65EIkcAA=",
+      "alt": "", "room": "Grounds", "order": 999, "include": false, "hero": false,
+      "note": "sunroom exterior, near-duplicate of #18"
+    },
+    {
+      "source": "Jenks_Blvd_604_Kalamazoo_49006-36.webp", "sourceNum": 36, "slug": "jenks-36-f88a45c8",
+      "width": 3200, "height": 2133, "aspectRatio": 1.5002, "widths": [400,800,1200,1600,2400], "formats": ["avif","webp","jpg"],
+      "lqip": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAADQAwCdASoUAA0APu1kqU2ppaOiMAgBMB2JZgCdL1AA+AZwIzSf/gAA/hHRjU3CbPGpGEytryUyK4RrHdj/a7F2lKT2JoysVpldgAAA",
+      "alt": "", "room": "", "order": 999, "include": false, "hero": false,
+      "note": "not yet reviewed in detail — flag for questionnaire"
+    }
+  ]
+}
