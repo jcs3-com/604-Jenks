@@ -13,3 +13,12 @@ database_name = "604-jenks-inquiries"
 database_id = "23372cbf-0c6f-4526-8e59-b952986b7331"
 
 [env.production]
+
+[[env.production.r2_buckets]]
+binding = "GALLERY_IMAGES"
+bucket_name = "604-jenks-images"
+
+[[env.production.d1_databases]]
+binding = "DB"
+database_name = "604-jenks-inquiries"
+database_id = "23372cbf-0c6f-4526-8e59-b952986b7331"
